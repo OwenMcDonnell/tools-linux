@@ -12,7 +12,7 @@ test_script:
     RED='\033[0;31m'
     NC='\033[0m'
     FLAG=false
-    toolsarr=($LINUX_TOOLS)
+    toolsarr=($TEST_TOOLS)
     for cmd in "${toolsarr[@]}"; do
       command -v $cmd || { echo -e "$RED$cmd NOT FOUND!$NC"; FLAG=true; }
     done
